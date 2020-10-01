@@ -1,0 +1,131 @@
+{
+  "kind": "collectionType",
+  "collectionName": "properties",
+  "info": {
+    "name": "property"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "location": {
+      "type": "string",
+      "required": true
+    },
+    "priceSale": {
+      "required": true,
+      "type": "biginteger"
+    },
+    "priceRent": {
+      "type": "biginteger"
+    },
+    "featured": {
+      "type": "boolean",
+      "required": true
+    },
+    "area": {
+      "type": "biginteger",
+      "required": true
+    },
+    "year_built": {
+      "type": "biginteger",
+      "required": true
+    },
+    "beds": {
+      "type": "integer",
+      "required": true
+    },
+    "baths": {
+      "type": "integer",
+      "required": true
+    },
+    "central_heating": {
+      "type": "boolean",
+      "default": false
+    },
+    "central_cooling": {
+      "type": "boolean",
+      "default": false
+    },
+    "fireplace": {
+      "type": "boolean",
+      "default": false
+    },
+    "swimming_pool": {
+      "type": "boolean",
+      "default": false
+    },
+    "rv_boat_parking": {
+      "type": "boolean",
+      "default": false
+    },
+    "two_stories": {
+      "type": "boolean",
+      "default": false
+    },
+    "deck_patio": {
+      "type": "boolean",
+      "default": false
+    },
+    "lat": {
+      "type": "float",
+      "required": true
+    },
+    "lng": {
+      "type": "float",
+      "required": true
+    },
+    "video_url": {
+      "type": "string"
+    },
+    "imageSm_Path": {
+      "type": "string",
+      "required": true
+    },
+    "imageLg_Path": {
+      "type": "string",
+      "required": true
+    },
+    "prop_id": {
+      "type": "string",
+      "required": true
+    },
+    "favoriteBy": {
+      "plugin": "users-permissions",
+      "collection": "user",
+      "via": "favoritesHomes",
+      "dominant": true
+    },
+    "imageLarge": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "imageSmall": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "agent": {
+      "via": "properties",
+      "model": "agent"
+    }
+  }
+}
