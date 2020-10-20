@@ -87,14 +87,6 @@
     "video_url": {
       "type": "string"
     },
-    "imageSm_Path": {
-      "type": "string",
-      "required": true
-    },
-    "imageLg_Path": {
-      "type": "string",
-      "required": true
-    },
     "prop_id": {
       "type": "string",
       "required": true
@@ -126,6 +118,14 @@
     "agent": {
       "via": "properties",
       "model": "agent"
+    },
+    "imageSm_Path": {
+      "type": "string",
+      "default": "1"
+    },
+    "imageLg_Path": {
+      "type": "string",
+      "default": "1"
     }
   }
 }

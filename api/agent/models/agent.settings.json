@@ -38,6 +38,10 @@
     "properties": {
       "collection": "property",
       "via": "agent"
+    },
+    "areasServed": {
+      "type": "json",
+      "required": false
     }
   }
 }
