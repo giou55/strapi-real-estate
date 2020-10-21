@@ -39,7 +39,7 @@
       "collection": "property",
       "via": "agent"
     },
-    "areasServed": {
+    "areas_served": {
       "type": "json",
       "required": false
     }
