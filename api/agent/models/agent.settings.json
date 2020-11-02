@@ -39,9 +39,9 @@
       "collection": "property",
       "via": "agent"
     },
-    "areas_served": {
-      "type": "json",
-      "required": false
+    "areas": {
+      "collection": "areas",
+      "via": "agents"
     }
   }
 }

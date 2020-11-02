@@ -126,6 +126,9 @@
     "imageLg_Path": {
       "type": "string",
       "default": "1"
+    },
+    "recent": {
+      "type": "boolean"
     }
   }
 }
