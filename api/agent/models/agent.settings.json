@@ -35,13 +35,13 @@
       "plugin": "upload",
       "required": true
     },
+    "areas": {
+      "collection": "areas",
+      "via": "agent"
+    },
     "properties": {
       "collection": "property",
       "via": "agent"
-    },
-    "areas": {
-      "collection": "areas",
-      "via": "agents"
     }
   }
 }

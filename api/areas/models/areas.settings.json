@@ -13,13 +13,12 @@
       "type": "string",
       "unique": true
     },
-    "agents": {
-      "via": "areas",
-      "collection": "agent",
-      "dominant": true
-    },
     "zip_code": {
       "type": "string"
+    },
+    "agent": {
+      "via": "areas",
+      "model": "agent"
     }
   }
 }
