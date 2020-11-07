@@ -42,6 +42,9 @@
     "properties": {
       "collection": "property",
       "via": "agent"
+    },
+    "featured": {
+      "type": "boolean"
     }
   }
 }
