@@ -127,8 +127,17 @@
       "type": "boolean"
     },
     "agent": {
-      "via": "properties",
-      "model": "agent"
+      "model": "agent",
+      "via": "properties"
+    },
+    "gallery": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
     }
   }
 }
