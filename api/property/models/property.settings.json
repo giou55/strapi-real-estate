@@ -1,119 +1,121 @@
 {
-  "kind": "collectionType",
-  "collectionName": "properties",
-  "info": {
-    "name": "property"
-  },
-  "options": {
-    "increments": true,
-    "timestamps": true
-  },
-  "attributes": {
-    "title": {
-      "type": "string",
-      "required": true
+    "kind": "collectionType",
+    "collectionName": "properties",
+    "info": {
+        "name": "property"
     },
-    "description": {
-      "type": "richtext",
-      "required": true
+    "options": {
+        "increments": true,
+        "timestamps": true
     },
-    "location": {
-      "type": "string",
-      "required": true
-    },
-    "priceSale": {
-      "required": true,
-      "type": "biginteger"
-    },
-    "priceRent": {
-      "type": "biginteger"
-    },
-    "featured": {
-      "type": "boolean",
-      "required": true
-    },
-    "area": {
-      "type": "biginteger",
-      "required": true
-    },
-    "year_built": {
-      "type": "biginteger",
-      "required": true
-    },
-    "beds": {
-      "type": "integer",
-      "required": true
-    },
-    "baths": {
-      "type": "integer",
-      "required": true
-    },
-    "central_heating": {
-      "type": "boolean",
-      "default": false
-    },
-    "central_cooling": {
-      "type": "boolean",
-      "default": false
-    },
-    "fireplace": {
-      "type": "boolean",
-      "default": false
-    },
-    "swimming_pool": {
-      "type": "boolean",
-      "default": false
-    },
-    "rv_boat_parking": {
-      "type": "boolean",
-      "default": false
-    },
-    "two_stories": {
-      "type": "boolean",
-      "default": false
-    },
-    "deck_patio": {
-      "type": "boolean",
-      "default": false
-    },
-    "lat": {
-      "type": "float",
-      "required": true
-    },
-    "lng": {
-      "type": "float",
-      "required": true
-    },
-    "video_url": {
-      "type": "string"
-    },
-    "prop_id": {
-      "type": "string",
-      "required": true
-    },
-    "favoriteBy": {
-      "plugin": "users-permissions",
-      "collection": "user",
-      "via": "favoritesHomes",
-      "dominant": true
-    },
-    "image_small_url": {
-      "type": "string",
-      "required": true
-    },
-    "image_large_url": {
-      "type": "string",
-      "required": true
-    },
-    "recent": {
-      "type": "boolean"
-    },
-    "agent": {
-      "via": "properties",
-      "model": "agent"
-    },
-    "gallery_images_url": {
-      "type": "json"
+    "attributes": {
+        "title": {
+            "type": "string",
+            "required": true
+        },
+        "description": {
+            "type": "richtext",
+            "required": true
+        },
+        "location": {
+            "type": "string",
+            "required": true
+        },
+        "priceSale": {
+            "required": true,
+            "type": "biginteger"
+        },
+        "priceRent": {
+            "type": "biginteger"
+        },
+        "featured": {
+            "type": "boolean",
+            "required": true
+        },
+        "area": {
+            "type": "biginteger",
+            "required": true
+        },
+        "year_built": {
+            "type": "biginteger",
+            "required": true
+        },
+        "beds": {
+            "type": "integer",
+            "required": true
+        },
+        "baths": {
+            "type": "integer",
+            "required": true
+        },
+        "central_heating": {
+            "type": "boolean",
+            "default": false
+        },
+        "central_cooling": {
+            "type": "boolean",
+            "default": false
+        },
+        "fireplace": {
+            "type": "boolean",
+            "default": false
+        },
+        "swimming_pool": {
+            "type": "boolean",
+            "default": false
+        },
+        "rv_boat_parking": {
+            "type": "boolean",
+            "default": false
+        },
+        "two_stories": {
+            "type": "boolean",
+            "default": false
+        },
+        "deck_patio": {
+            "type": "boolean",
+            "default": false
+        },
+        "lat": {
+            "type": "float",
+            "required": true
+        },
+        "lng": {
+            "type": "float",
+            "required": true
+        },
+        "video_url": {
+            "type": "string"
+        },
+        "prop_id": {
+            "type": "string",
+            "required": true
+        },
+        "favoriteBy": {
+            "plugin": "users-permissions",
+            "collection": "user",
+            "via": "favoritesHomes",
+            "dominant": true
+        },
+        "image_small_url": {
+            "type": "string",
+            "required": true,
+            "default": "not set"
+        },
+        "image_large_url": {
+            "type": "string",
+            "required": true,
+            "default": "not set"
+        },
+        "recent": {
+            "type": "boolean"
+        },
+        "agent": {
+            "via": "properties",
+            "model": "agent"
+        },
+        "gallery_images_url": {
+            "type": "json"
+        }
     }
-  }
 }
