@@ -25,8 +25,8 @@
       "unique": true
     },
     "properties": {
-      "via": "agent",
-      "collection": "property"
+      "collection": "property",
+      "via": "agent"
     },
     "featured": {
       "type": "boolean"
@@ -34,10 +34,6 @@
     "areas": {
       "collection": "areas",
       "via": "agents"
-    },
-    "imageurl": {
-      "type": "string",
-      "required": true
     }
   }
 }
