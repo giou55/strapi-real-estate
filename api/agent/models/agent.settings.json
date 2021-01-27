@@ -24,17 +24,6 @@
       "required": true,
       "unique": true
     },
-    "image": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": true
-    },
     "properties": {
       "via": "agent",
       "collection": "property"
@@ -43,8 +32,12 @@
       "type": "boolean"
     },
     "areas": {
-      "via": "agents",
-      "collection": "areas"
+      "collection": "areas",
+      "via": "agents"
+    },
+    "imageurl": {
+      "type": "string",
+      "required": true
     }
   }
 }

@@ -97,31 +97,15 @@
       "via": "favoritesHomes",
       "dominant": true
     },
-    "imageLarge": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images"
-      ],
-      "plugin": "upload",
-      "required": false
-    },
-    "imageSmall": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images"
-      ],
-      "plugin": "upload",
-      "required": false
-    },
-    "imageSm_Path": {
+    "image_small_url": {
       "type": "string",
-      "default": "1"
+      "default": "1",
+      "required": true
     },
-    "imageLg_Path": {
+    "image_large_url": {
       "type": "string",
-      "default": "1"
+      "default": "1",
+      "required": true
     },
     "recent": {
       "type": "boolean"
@@ -130,14 +114,8 @@
       "model": "agent",
       "via": "properties"
     },
-    "gallery": {
-      "collection": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images"
-      ],
-      "plugin": "upload",
-      "required": false
+    "gallery_images_url": {
+      "type": "json"
     }
   }
 }

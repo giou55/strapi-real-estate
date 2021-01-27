@@ -14,8 +14,8 @@
       "unique": true
     },
     "agents": {
-      "collection": "agent",
       "via": "areas",
+      "collection": "agent",
       "dominant": true
     }
   }
