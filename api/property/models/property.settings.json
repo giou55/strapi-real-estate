@@ -97,6 +97,14 @@
             "via": "favoritesHomes",
             "dominant": true
         },
+        "image_small_url": {
+            "type": "string",
+            "required": true
+        },
+        "image_large_url": {
+            "type": "string",
+            "required": true
+        },
         "recent": {
             "type": "boolean"
         },
