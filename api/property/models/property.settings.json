@@ -97,16 +97,6 @@
             "via": "favoritesHomes",
             "dominant": true
         },
-        "image_small_url": {
-            "type": "string",
-            "required": true,
-            "default": "not set"
-        },
-        "image_large_url": {
-            "type": "string",
-            "required": true,
-            "default": "not set"
-        },
         "recent": {
             "type": "boolean"
         },
